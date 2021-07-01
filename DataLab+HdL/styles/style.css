@@ -1,0 +1,545 @@
+canvas {
+  display: block;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: rgb(241,241,231);
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+.principalContainer{
+  padding: 0 75px  0 75px;
+}
+.containerTitleTimeline{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.timeline {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vw;
+  padding-left: 10vw;
+}
+
+.EPgente4{
+  font-family: "Proxima Soft", normal; 
+  font-size: 15px;
+}
+
+
+/* New styles */
+
+/* Navigation */
+.nav-menu{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 3;
+  background: rgb(241,241,231);
+}
+nav {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 25px;
+  border: solid black 1px;
+  transition: 300ms ease;
+}
+nav a:hover{
+  background-color: black;
+  color: white;
+  transition: 300ms ease;
+}
+.actual {
+  background-color: black;
+  color: white;
+}
+/* Header */
+.title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4.5vw;
+  padding-top: 75px;
+}
+.detailTitle{
+    font-style: italic;
+    font-weight: 300;
+}
+.containerResume{
+  width: 100%;
+}
+.resume {
+  width: 40%;
+  padding-right: 5vw;
+  color: #444795;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+.containerPhoto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.photo1{
+  width: 40%;
+}
+
+/* First Text */
+.containerFirstBlock{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleBlock{
+  display: flex;
+  width: 60%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 13vw;
+}
+h2.titleBlock {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.textBlock{
+  width: 30%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+  padding: 0 20px;
+}
+
+/* images first page*/
+.containerSecondBlock{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5vw 0;
+}
+.secondBlock{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.photo2{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.caption1 {
+  width: 75%;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+.photo3{
+  width: 100%;
+  margin-bottom: 1vw;
+  transition: 1s ease
+}
+.photo3:hover{
+  transform: scale(1.1);
+  transition: 500ms ease
+}
+.containerCaption2{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containerCaption2 p, .containerCaption2 h3 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+} 
+.caption2{
+  font-weight: bold;
+}
+.textCaption2, .caption2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vw;
+}
+/* Second Page */
+
+/* Second Title */
+
+.containerSecondPage, .containerThirdPage {
+  padding-top: 5vw;
+}
+.containerSecondTitle{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vw;
+}
+.secondText{
+  align-self: flex-end;
+  width: 15%;
+  margin-top: -5vw;
+}
+.secondText p{
+  font-size: 1.6vw;
+}
+.detailSecondText{
+  padding: 0 2px;
+  color: #3a3d8a;
+  border: solid #3a3d8a 2px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Texts */
+.containerTextsSecondPage{
+  width: 100%;
+  display: flex;
+}
+.textLeft{
+  width: 50%;
+  color: #3a3d8a;
+}
+.textRight{
+  width: 50%;
+}
+.textLeft p, .textRight p{
+  width: 60%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2vw;
+  font-weight: bold;
+}
+/* Grid */
+
+.grid{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.grid p, .grid h4 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.grid h4{
+  font-size: 2vw;
+}
+.grid p{
+  font-size: 1.8vw;
+}
+.containergrid{
+  width: 45%;
+}
+.separator {
+  border-left: solid black 1px;
+}
+.w60{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.w30{
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.w60 div {
+  padding-bottom: 15px;
+}
+.w30modified{
+  justify-content: flex-end;
+}
+.photoGrid{
+  width: 100%;
+  height: 90%;
+}
+
+/* Third Page */
+.titleTop, .titleBottom {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 11vw;
+  margin: 0;
+}
+.titleBottom{
+  padding-left: 10vw;
+}
+.containerDescriptionThirdPage{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.descriptionThirdPage {
+  width: 40%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border: 15px solid black;
+  border-top-left-radius: 30px;
+  background: black;
+  padding-left: 1.5vw;
+  padding-right: 2.5vw;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+.titleThirdContent {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4vw;
+  font-weight: lighter;
+  font-style: italic;
+  margin: 0;
+}
+.detailYear{
+  font-weight: bold;
+  font-style: normal;
+}
+.containerInfoGente{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+}
+.containerTextsInfo{
+  width: 40%;
+  font-size: 2vw;
+}
+.containerPhotos{
+  width: 40%;
+}
+.containerPhotoMagazine{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.photoMagazine{
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+}
+.captionPhotoMagazine{
+  width: 50%;
+  font-size: 1.5vw;
+}
+.containerInfoGaltieri{
+  width: 100%;
+  margin-bottom: 10vw;
+}
+.containerGaltieri {
+  width: 35%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border: 5px solid black;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 4vw 2vw;
+  margin-left: 8vw;
+  position: absolute;
+}
+.containerCaptionFoto10{
+  padding-left: 7vw;
+}
+.containerCaptionFoto10 p, .containerCaptionFoto10 h4{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.foto10{
+  padding-top: 15vw;
+  width: 100%;
+  margin-bottom: 2vw;
+}
+.horizontalSeparator{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5vw;
+}
+.separatorHorizontal{
+  width: 85%;
+  border-top: solid rgb(149, 149, 216) 2px;
+}
+.infoSomos{
+  width: 35%;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 2vw;
+  margin-bottom: 5vw;
+}
+.infoSomos p {
+  margin: 0;
+  font-size: 2vw;
+}
+.containerPhotoSomos{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5vw;
+}
+.photoSomos{
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.photoSomos img{
+  width: 50%;
+  padding:0 1vw
+}
+.photoSomos p {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #3a3d8a;
+}
+.containerPhotosCentered{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photosCentered{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.photosCentered img {
+  width: 50%;
+}
+.infoBottomPhotos{
+  font-family: 'Roboto', sans-serif;
+  width: 50%;
+  font-size: 2vw;
+  align-self: flex-start;
+  margin-left: 8vw;
+}
+.containerPhotoLeft{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.foto14{
+  margin-left: 8vw;
+  width: 35%;
+}
+.lastQuad {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+  width: 60%;
+  font-size: 2vw;
+  padding: 2vw 5vw;
+  border-top-right-radius: 15px;
+}
+.captionPhotoLeft {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  width: 20%;
+}
+.right{
+  justify-content: flex-end;
+  margin-bottom: 5vw;
+}
+.finaleText{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vw;
+  color: #3a3d8a;
+}
+.finale{
+  border-radius: 30px;
+  padding: 5px 8px
+}
+/* Footer */
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid black 1px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 75px;
+}
+.containerPhotoFooter{
+  width: 30%;
+  height: 50%;
+  background-image: url('../Imagenes/logo\ utdt\ 1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+/* Styles for video */
+.containerVideo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.videoTrailer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../Imagenes/backgroundVideo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35vw;
+  height: 25vw;
+}
+.playbtn {
+  width: 8vw;
+  height: 8vw;
+  background-image: url('../Imagenes/playButton.png');
+  background-size: contain;
+  transition: 450ms ease;
+}
+.playbtn:hover {
+  background-image: url('../Imagenes/playButtonInv.png');
+  transition: 150ms ease;
+  cursor: pointer
+}
+.trailer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  visibility: hidden;
+  opacity: 0;
+}
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 800ms ease-in;
+  z-index: 5;
+}
+.trailer video {
+  position: relative;
+  max-width: 1100px;
+  outline: none;
+}
+.iconQuit {
+  position: absolute;
+  max-width: 48px;
+  top: 45px;
+  right: 45px;
+  cursor: pointer;
+  filter: invert(1);
+}
